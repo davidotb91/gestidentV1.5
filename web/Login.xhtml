@@ -33,7 +33,8 @@ and open the template in the editor.
                               <f:facet name="footer">
                                   <p:commandButton value="Login" update="growl" actionListener="#{userLoginView.login(event)}" icon=""
                                                    oncomplete="handleLoginRequest(xhr, status, args)" />
-                                  <pre><h:link outcome="/paciente/Registrarse" value="Desea Registrarse?"/></pre>
+                                  
+                                  <h:link outcome="/paciente/Registrarse" value="Desea Registrarse?"/>
                               </f:facet>  
                               
                             </h:panelGrid>

@@ -15,8 +15,7 @@
             </h:panelGroup>
             <h:form>
                 <h:panelGrid columns="2">
-                    <h:outputLabel value="#{bundle.CreatePacienteLabel_idPaciente}" for="idPaciente" />
-                    <h:inputText id="idPaciente" value="#{pacienteController.selected.idPaciente}" title="#{bundle.CreatePacienteTitle_idPaciente}" required="true" requiredMessage="#{bundle.CreatePacienteRequiredMessage_idPaciente}"/>
+                    
                     <h:outputLabel value="#{bundle.CreatePacienteLabel_nombresPaciente}" for="nombresPaciente" />
                     <h:inputText id="nombresPaciente" value="#{pacienteController.selected.nombresPaciente}" title="#{bundle.CreatePacienteTitle_nombresPaciente}" required="true" requiredMessage="#{bundle.CreatePacienteRequiredMessage_nombresPaciente}"/>
                     <h:outputLabel value="#{bundle.CreatePacienteLabel_apellidosPaciente}" for="apellidosPaciente" />
@@ -40,9 +39,7 @@
                 <h:commandLink action="#{pacienteController.create}" value="#{bundle.CreatePacienteSaveLink}" />
                 <br />
                 <br />
-                <h:commandLink action="#{pacienteController.prepareList}" value="#{bundle.CreatePacienteShowAllLink}" immediate="true"/>
-                <br />
-                <br />
+              
                 <h:link outcome="/index" value="#{bundle.CreatePacienteIndexLink}"/>
             </h:form>
         </ui:define>
